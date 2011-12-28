@@ -1,0 +1,5 @@
+INSTALL
+MANIFEST
+Makefile.PL
+README
+lib/Crypt/PW44.pm

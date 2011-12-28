@@ -7,7 +7,7 @@ use vars qw(@ISA @EXPORT @EXPORT_OK $VERSION $HASH $HEX);
 @ISA = qw(Exporter);
 @EXPORT_OK = qw( key compute key_md4 key_md5 compute_md4 compute_md5 generate);
 @EXPORT = qw( key key_md4 key_md5 generate);
-$VERSION = '0.10';
+$VERSION = '0.11';
 $HASH = 'MD4';  # set default here, could be 4 or 5
 $HEX= 0; # if true, return key as a hex digit string
 
