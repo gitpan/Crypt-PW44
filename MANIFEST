@@ -3,3 +3,4 @@ MANIFEST
 Makefile.PL
 README
 lib/Crypt/PW44.pm
+META.yml                                 Module meta-data (added by MakeMaker)
