@@ -7,7 +7,7 @@ use vars qw(@ISA @EXPORT @EXPORT_OK $VERSION $HASH $HEX);
 @ISA = qw(Exporter);
 @EXPORT_OK = qw( key compute key_md4 key_md5 compute_md4 compute_md5 generate);
 @EXPORT = qw( key key_md4 key_md5 generate);
-$VERSION = '0.12';
+$VERSION = '0.13';
 $HASH = 'MD4';  # set default here, could be 4 or 5
 $HEX= 0; # if true, return key as a hex digit string
 
@@ -197,7 +197,12 @@ This was inspired by the XKCD web comic "Password Strength", permalink http://xk
 
 =head1 INSTALLATION
 
-Needs to be built, right now just copy the .pm file somewhere useful, e.g. a calling script's directory.
+(The usual.)
+
+perl Makefile.PL
+make
+make test
+make install
 
 =head1 FUNCTIONS
 
@@ -223,7 +228,7 @@ AKA "N". Counting from zero, not 1, is number of ASCII words in the password gen
 
 =head1 NOTES
 
-Ripped off from the Skey module, written by
+Derived (heavily) from the Skey module, written by
 
 Ken Williams, kwilliams@cpan.org
 
